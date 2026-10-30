@@ -1,0 +1,32 @@
+/******************************************************************************
+input two floating numbers
+choose an operator
+result
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float n1, n2, result;
+    char oprtr;
+    
+    cout <<"Enter two numbers: ";
+    cin >> n1 >> n2;
+    
+    cout << "\nEnter the operator(+, -, *, /) : ";
+    cin >> oprtr;
+    
+    if (oprtr == '+') {
+        result = n1 + n2;
+    } else if (oprtr == '-') {
+        result = n1 - n2;
+    } else if (oprtr == '*') {
+        result = n1 * n2;
+    } else if (oprtr == '/') {
+        result = n1 / n2;
+    }
+    cout << "\nThe result of the operation is : " << result;
+
+    return 0;
+}
